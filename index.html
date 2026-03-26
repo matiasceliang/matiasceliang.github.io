@@ -1,38 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Matias Celi Portfolio</title>
-  <style>
-    body {
-      font-family: Arial;
-      margin: 40px;
-      background: #f5f5f5;
-    }
-    h1 { color: #2c3e50; }
-    .card {
-      background: white;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Matias Celi | Aerospace Engineering</title>
+
+<style>
+:root {
+  --bg: #0a0f1c;
+  --card: #111827;
+  --accent: #3b82f6;
+  --text: #e5e7eb;
+  --subtle: #9ca3af;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 20px;
+}
+
+h1 {
+  font-size: 2.8rem;
+}
+
+h2 {
+  color: var(--accent);
+  margin-bottom: 15px;
+}
+
+p {
+  color: var(--subtle);
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.grid {
+  display: grid;
+  gap: 20px;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
+.links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: var(--accent);
+}
+
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--subtle);
+}
+</style>
 </head>
+
 <body>
 
-<h1>Matias Celi</h1>
-<p>Aerospace Engineering Student | BCaBA</p>
+<div class="container">
 
-<div class="card">
-  <h2>🚀 Engineering Projects</h2>
-  <p>• CubeSat VISION Project</p>
-  <p>• Structural Analysis Labs (MATLAB)</p>
-</div>
+  <!-- HEADER -->
+  <div class="header">
+    <h1>Matias Celi</h1>
+    <p class="tagline">Aerospace Engineering Student | Structures & Analysis</p>
+  </div>
 
+  <!-- ABOUT -->
+  <div class="section">
+    <h2>About</h2>
+    <p>
+      Aerospace engineering student with experience in structural analysis, experimental testing,
+      and numerical modeling. Focused on applying engineering fundamentals to real-world systems
+      including aerospace structures and flight hardware.
+    </p>
+  </div>
 
-<div class="card">
-  <h2>📫 Contact</h2>
-  <p>Email: your@email.com</p>
+  <!-- PROJECTS -->
+  <div class="section">
+    <h2>Projects</h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>🚀 CubeSat VISION</h3>
+        <p>
+          Conducted system-level trade studies and contributed to subsystem integration,
+          including structural and power considerations.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>📊 Structural Testing & Analysis</h3>
+        <p>
+          Performed stress-strain analysis on aluminum and composite materials using MATLAB
+          and experimental data from strain gage instrumentation.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🛠 FEA Modeling</h3>
+        <p>
+          Developed finite element models using NX Nastran (Femap) to evaluate structural behavior
+          under loading conditions.
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SKILLS -->
+  <div class="section">
+    <h2>Technical Skills</h2>
+    <p>
+      MATLAB • Simulink • NX Nastran (Femap) • CATIA V5 • Solid Mechanics • Experimental Methods
+    </p>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section">
+    <h2>Contact</h2>
+    <div class="links">
+      <a href="#">GitHub</a>
+      <a href="#">LinkedIn</a>
+      <a href="#">Resume</a>
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>© 2026 Matias Celi</p>
+  </div>
+
 </div>
 
 </body>
